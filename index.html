@@ -411,71 +411,139 @@
 <div class="row-inner">
     {{#region "packer" id="footer-region" columns="4" column_width="225" gutter_width="15" dummy_content="I-1-s,T-1-s" max_auto_assets="0" sizes="s" default_size="s"}}
 			
-		{{#asset "text" size="s"}}
+    {{#asset "text" size="l"}}
       <div class="content">
-      	<div class="{{#if title_raw}}has_title{{/if}}">{{{title}}}</div>
+        <div class="{{#if title_raw}}has_title{{/if}}">{{{title}}}</div>
         {{{body}}}
       </div>
-		{{/asset}}
+    {{/asset}}
 
-		{{#asset "imagegroup" size="s"}}
-			<div class="content">
-				{{#if_many images}}
+    {{#asset "text" size="s"}}
+      <div class="content">
+        <div class="{{#if title_raw}}has_title{{/if}}">{{{title}}}</div>
+        {{{body}}}
+      </div>
+    {{/asset}}
+
+
+    {{#asset "imagegroup" size="l"}}
+      <div class="content">
+        {{#if_many images}}
+          <div class="slideshow">
+            <div class="images">
+            {{#each images}}
+              <img alt="{{{title}}}" src="{{{resize original_url width=450 }}}" width="450" />
+            {{/each}}
+            </div>
+          </div>
+        {{else}}
+          {{#each images}}
+            <img alt="{{{title}}}" src="{{{resize original_url width=225}}}" width="225" />
+          {{/each}}
+        {{/if_many}}
+        <div class="asset-content">
+          <div class="{{#if title_raw}}has_title{{/if}}">{{{title}}}</div>
+          {{{description}}}
+        </div>
+      </div>
+    {{/asset}}
+
+    {{#asset "imagegroup" size="s"}}
+      <div class="content">
+        {{#if_many images}}
           <div class="slideshow">
             <div class="images">
             {{#each images}}
               <img alt="{{{title}}}" src="{{{resize original_url width=225 }}}" width="225" />
             {{/each}}
-						</div>
+            </div>
           </div>
-				{{else}}
+        {{else}}
           {{#each images}}
             <img alt="{{{title}}}" src="{{{resize original_url width=225}}}" width="225" />
           {{/each}}
         {{/if_many}}
-				<div class="asset-content">
-	      	<div class="{{#if title_raw}}has_title{{/if}}">{{{title}}}</div>
-					{{{description}}}
-				</div>
-			</div>
-		{{/asset}}
+        <div class="asset-content">
+          <div class="{{#if title_raw}}has_title{{/if}}">{{{title}}}</div>
+          {{{description}}}
+        </div>
+      </div>
+    {{/asset}}
 
-		{{#asset "videogroup" size="s"}}
-			<div class="content">
+
+    {{#asset "videogroup" size="l"}}
+      <div class="content">
+        {{{videoplayer contents width="450" height="340" resolution="medium"}}}
+        <div class="asset-content">
+          <div class="{{#if title_raw}}has_title{{/if}}">{{{title}}}</div>
+          {{{description}}}
+        </div>
+      </div>
+    {{/asset}}
+
+    {{#asset "videogroup" size="s"}}
+      <div class="content">
         {{{videoplayer contents width="225" height="169" resolution="medium"}}}
-				<div class="asset-content">
-	      	<div class="{{#if title_raw}}has_title{{/if}}">{{{title}}}</div>
-					{{{description}}}
-				</div>
-			</div>
-		{{/asset}}
+        <div class="asset-content">
+          <div class="{{#if title_raw}}has_title{{/if}}">{{{title}}}</div>
+          {{{description}}}
+        </div>
+      </div>
+    {{/asset}}
 
-		{{#asset "embedgroup" size="s" width="225"}}
-			<div class="content">
+
+    {{#asset "embedgroup" size="l" width="450"}}
+      <div class="content">
         {{#embeds}}
           <div class="embed">{{{html}}}</div>
         {{/embeds}}
-				<div class="asset-content">
-	      	<div class="{{#if title_raw}}has_title{{/if}}">{{{title}}}</div>
-					{{{description}}}
-				</div>
-			</div>
-		{{/asset}}
+        <div class="asset-content">
+          <div class="{{#if title_raw}}has_title{{/if}}">{{{title}}}</div>
+          {{{description}}}
+        </div>
+      </div>
+    {{/asset}}
+
+    {{#asset "embedgroup" size="s" width="225"}}
+      <div class="content">
+        {{#embeds}}
+          <div class="embed">{{{html}}}</div>
+        {{/embeds}}
+        <div class="asset-content">
+          <div class="{{#if title_raw}}has_title{{/if}}">{{{title}}}</div>
+          {{{description}}}
+        </div>
+      </div>
+    {{/asset}}
 
 
-		{{#asset "documentgroup" size="s"}}
-			<div class="content">
-				<div class="documents-content">
-	      	<div class="{{#if title_raw}}has_title{{/if}}">{{{title}}}</div>
-					{{{description}}}
-				</div>
-				<div class="documents">
+    {{#asset "documentgroup" size="l"}}
+      <div class="content">
+        <div class="documents-content">
+          <div class="{{#if title_raw}}has_title{{/if}}">{{{title}}}</div>
+          {{{description}}}
+        </div>
+        <div class="documents">
           {{#documents}}
             <a href="{{{original_url}}}" title="{{{format_file_size source_file_size}}}"><span class="file-extension file-extension-{{extension}}"></span> <span class="file-title">{{{title}}}</span></a>
           {{/documents}}
         </div>
-			</div>
-		{{/asset}}
+      </div>
+    {{/asset}}
+
+    {{#asset "documentgroup" size="s"}}
+      <div class="content">
+        <div class="documents-content">
+          <div class="{{#if title_raw}}has_title{{/if}}">{{{title}}}</div>
+          {{{description}}}
+        </div>
+        <div class="documents">
+          {{#documents}}
+            <a href="{{{original_url}}}" title="{{{format_file_size source_file_size}}}"><span class="file-extension file-extension-{{extension}}"></span> <span class="file-title">{{{title}}}</span></a>
+          {{/documents}}
+        </div>
+      </div>
+    {{/asset}}
 
 
   {{/region}}
