@@ -94,7 +94,7 @@ html .themed {
   	
   	#footer-region {
   		.clearfix;  padding:0; font-size:12px; line-height: 1.2em;
-  		.asset-title { border:0; color: #fff; font-size:13px; font-family: 'Lato', sans-serif; padding:0; margin:0; font-weight: 400; line-height: 1.4em;}
+  		.asset-title { border:0; color: #fff; font-size:13px; font-family: 'Lato', sans-serif; padding:0 0 .25em 0; margin:0; font-weight: 400; line-height: 1.4em;}
   		.asset-size-l { margin-top: 10px; width:450px;}
       .asset-size-s { margin-top: 10px; width:225px;}
   		a { color:#fff; 
@@ -139,7 +139,7 @@ html .themed {
   #pop-title, .has_title .asset-title { 
     font-family: @headline-font-family; font-weight: @headline-font-weight; letter-spacing: -0.05em; color: @accent-color; line-height: 1em;  padding: 0em 0 .5em; margin-bottom: 1em;
     }  
-  #pop-title { font-size: 48px;  border-bottom: 1px solid #CCC; }
+  #pop-title { font-size: 48px;  border-bottom: 1px solid #CCC; display:none !important;}
   .has_title .asset-title  { font-size:28px; line-height:1.2em; border-bottom: 1px solid #CCC; padding: 0 0 0.25em 0; margin: 0 0 0.25em 0;  color: @subheadline-font-color; }
 	
 	.asset { margin-bottom:10px; }
@@ -242,7 +242,7 @@ html .themed {
 		}
 
 	
-	.documents { text-align: center; }
+	.documents { }
 	.documents a {
 		display: inline-block;
 		vertical-align: top;
@@ -252,7 +252,7 @@ html .themed {
 		margin: 0;
 		height: 80px;
 		.border-radius(3px, 3px, 3px, 3px);
-    width: 120px;
+    width: 140px;
 	}
 
 	.documents a:hover { background: rgba(255, 255, 255, 0.7); text-decoration: underline; }
