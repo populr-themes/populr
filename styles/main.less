@@ -7,6 +7,7 @@ here as well. It's not a great solution, but at least it works!
 */
 
 @import 'preboot';
+@import 'elements';
 @import '//fonts.googleapis.com/css?family=Lato:300,400,600,800|Open+Sans:400,300,600,700&.css';
 @import 'variables';
 
@@ -441,78 +442,4 @@ html .themed {
 
 #tag { background: #555 !important; }
 
-/* MOBILE STYLESHEET */
-
-#populr > .mobile-reset-queries(290px, 450px);
-
-@media all and (min-device-width: 320px) 
-           and (max-device-width: 480px) {
-
-  @media (orientation: portrait) {
-    #pop {width: 320px !important;}
-    #top-region .asset , .asset-content, .asset-container, .columnizer-row {width: 300px;}
-    #footer-region-container {width: 270px !important;}
-  }
-  @media (orientation: landscape) {
-    #pop {width: 480px !important;}
-    #top-region .asset , .asset-content, .asset-container, .columnizer-row {width: 460px;}
-    #footer-region-container {width: 430px !important;}
-  }
-  #pop {
-    margin-top: 10px !important;
-    font-size: 12px !important;
-    line-height:1.5em;
-
-  .row-inner { width:inherit !important; }
-  #middle #sidebar-region { width:inherit !important; margin:0 !important; float: none !important; }    
-  #top-region .asset , .asset-content, .asset-container, .columnizer-row {
-    display: block !important;
-    float: none !important;
-    position: static !important;
-    padding:0 !important;
-    clear:both !important;
-  }
-  .has_title .asset-title { padding-top:10px;}
-  
-
-  #footer-region-container {
-    margin: 0 0 -10px -20px !important;
-    padding: 10px 30px 0 !important;
-  }
-
-  #pop .wrap { width: inherit !important; }
-  #pop #masthead {width: 320px;}
-
-  #main-content {
-    width: auto !important;
-    padding: 15px !important;
-    margin: -10px 0 -10px 0 !important;
-  }
-
-  #pop .columnizer-row { padding: 20px 0px -1px 10px !important }
-
-  #pop .columnizer-row .asset h2 { text-align:left; }
-    
-
-  #pop .asset .body { font-size: 14px !important; }
-
-
-  .asset .content {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
-  
-  .asset-container  {}
-  
-  .asset-container.columnizer-col {
-    margin-left: 0 !important;
-
-  }
-
-  .columnizer-col {
-    width: auto !important;
-    margin: 0 !important;
-  }
-
-}
 
