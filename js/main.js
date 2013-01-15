@@ -20,20 +20,6 @@ $(document).on('pop-initialized', function(){
   $('.asset').live('destroy', function(e, asset){
 		
   });
-  
-
-/*
-  $('.columnizer-col3 .body, .columnizer-col4 .body,.columnizer-col5 .body,.columnizer-col6 .body').expander({
-	  slicePoint: 270,
-	  widow: 2,
-	  expandEffect: 'show',
-	  userCollapseText: '[<]',
-	  expandText: '[…]'
-	});
-*/
-	
-	/* $('.asset-type-text.asset-size-1 .body, .asset-type-text.asset-size-2 .body').columnize({ columns: 2 }); */
-
 	
 });
 
