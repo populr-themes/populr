@@ -444,20 +444,22 @@ html .themed {
 
 /* MOBILE STYLESHEET */
 
-#populr > .mobile-reset-queries(290px, 450px);
 
-@media all and (min-device-width: 320px) and (max-device-width: 480px) {
 
-  @media (orientation: portrait) {
-    #pop {width: 320px !important;}
-    #top-region .asset , .asset-content, .asset-container, .columnizer-row {width: 300px;}
-    #footer-region-container {width: 270px !important;}
-  }
-  @media (orientation: landscape) {
-    #pop {width: 480px !important;}
-    #top-region .asset , .asset-content, .asset-container, .columnizer-row {width: 460px;}
-    #footer-region-container {width: 430px !important;}
-  }
+@media screen and (max-width: 960px)  {
+  #populr > .mobile-reset();  
+
+  // @media (orientation: portrait) {
+  //   #pop {width: 320px !important;}
+  //   #top-region .asset , .asset-content, .asset-container, .columnizer-row {width: 300px;}
+  //   #footer-region-container {width: 270px !important;}
+  // }
+  // @media (orientation: landscape) {
+  //   #pop {width: 480px !important;}
+  //   #top-region .asset , .asset-content, .asset-container, .columnizer-row {width: 460px;}
+  //   #footer-region-container {width: 430px !important;}
+  // }
+  
   #pop {
     margin-top: 10px !important;
     font-size: 12px !important;
