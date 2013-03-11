@@ -3,8 +3,6 @@ $(document).on('pop-initialized', function(){
  	
   $('.asset').live('initialize', function(e, asset){
 
-		$("a.fancybox").fancybox();
-
     $('.asset-type-imagegroup .slideshow .images').each(function() {
     	var $this = $(this);
     	$this.cycle({
