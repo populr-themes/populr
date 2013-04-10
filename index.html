@@ -42,38 +42,9 @@
       </div>
     {{/asset}}
 
-
     {{#asset "imagegroup" size="l"}}
       <div class="content">
-        {{#if_many images}}
-          <div class="slideshow">
-            <div class="images">
-            {{#each images}}
-              {{#if link}}
-                <a href="{{{link}}}">
-                  <img alt="{{{title}}}" src="{{{resize original_url width=410 }}}" width="410" />
-                </a>
-              {{else}}
-                <a href="{{{original_url}}}" class="fancybox">
-                  <img alt="{{{title}}}" src="{{{resize original_url width=410 }}}" width="410" />
-                </a>
-              {{/if}}
-            {{/each}}
-            </div>
-          </div>
-        {{else}}
-          {{#each images}}
-            {{#if link}}
-              <a href="{{{link}}}">
-                <img alt="{{{title}}}" src="{{{resize original_url width=410 }}}" width="410" />
-              </a>
-            {{else}}
-              <a href="{{{original_url}}}" class="fancybox">
-                <img alt="{{{title}}}" src="{{{resize original_url width=410 }}}" width="410" />
-              </a>
-            {{/if}}
-          {{/each}}
-        {{/if_many}}
+        {{{imageslider contents width="410" height="210" prevnext-enabled=false fx="fade" crop-single=false}}}
         <div class="asset-content">
           <div class="{{#if title_raw}}has_title{{/if}}">{{{title}}}</div>
           {{{description}}}
@@ -83,42 +54,13 @@
 
     {{#asset "imagegroup" size="s"}}
       <div class="content">
-        {{#if_many images}}
-          <div class="slideshow">
-            <div class="images">
-            {{#each images}}
-              {{#if link}}
-                <a href="{{{link}}}">
-                  <img alt="{{{title}}}" src="{{{resize original_url width=210 }}}" width="210" />
-                </a>
-              {{else}}
-                <a href="{{{original_url}}}" class="fancybox">
-                  <img alt="{{{title}}}" src="{{{resize original_url width=210 }}}" width="210" />
-                </a>
-              {{/if}}
-            {{/each}}
-            </div>
-          </div>
-        {{else}}
-          {{#each images}}
-            {{#if link}}
-              <a href="{{{link}}}">
-                <img alt="{{{title}}}" src="{{{resize original_url width=210 }}}" width="210" />
-              </a>
-            {{else}}
-              <a href="{{{original_url}}}" class="fancybox">
-                <img alt="{{{title}}}" src="{{{resize original_url width=210 }}}" width="210" />
-              </a>
-            {{/if}}
-          {{/each}}
-        {{/if_many}}
+        {{{imageslider contents width="210" height="210" prevnext-enabled=false fx="fade" crop-single=false}}}
         <div class="asset-content">
           <div class="{{#if title_raw}}has_title{{/if}}">{{{title}}}</div>
           {{{description}}}
         </div>
       </div>
     {{/asset}}
-
 
     {{#asset "videogroup" size="l"}}
       <div class="content">
@@ -231,35 +173,7 @@
 
     {{#asset "imagegroup" size="l"}}
       <div class="content">
-        {{#if_many images}}
-          <div class="slideshow">
-            <div class="images">
-            {{#each images}}
-              {{#if link}}
-                <a href="{{{link}}}">
-                  <img alt="{{{title}}}" src="{{{resize original_url width=690 }}}" width="690" />
-                </a>
-              {{else}}
-                <a href="{{{original_url}}}" class="fancybox">
-                  <img alt="{{{title}}}" src="{{{resize original_url width=690 }}}" width="690" />
-                </a>
-              {{/if}}
-            {{/each}}
-            </div>
-          </div>
-        {{else}}
-          {{#each images}}
-            {{#if link}}
-              <a href="{{{link}}}">
-                <img alt="{{{title}}}" src="{{{resize original_url width=690 }}}" width="690" />
-              </a>
-            {{else}}
-              <a href="{{{original_url}}}" class="fancybox">
-                <img alt="{{{title}}}" src="{{{resize original_url width=690 }}}" width="690" />
-              </a>
-            {{/if}}
-          {{/each}}
-        {{/if_many}}
+        {{{imageslider contents width="690" height="500" prevnext-enabled=false fx="fade" crop-single=false}}}
         <div class="asset-content">
           <div class="{{#if title_raw}}has_title{{/if}}">{{{title}}}</div>
           {{{description}}}
@@ -269,42 +183,13 @@
 
     {{#asset "imagegroup" size="s"}}
       <div class="content">
-        {{#if_many images}}
-          <div class="slideshow">
-            <div class="images">
-            {{#each images}}
-              {{#if link}}
-                <a href="{{{link}}}">
-                  <img alt="{{{title}}}" src="{{{resize original_url width=330 }}}" width="330" />
-                </a>
-              {{else}}
-                <a href="{{{original_url}}}" class="fancybox">
-                  <img alt="{{{title}}}" src="{{{resize original_url width=330 }}}" width="330" />
-                </a>
-              {{/if}}
-            {{/each}}
-            </div>
-          </div>
-        {{else}}
-          {{#each images}}
-            {{#if link}}
-              <a href="{{{link}}}">
-                <img alt="{{{title}}}" src="{{{resize original_url width=330 }}}" width="330" />
-              </a>
-            {{else}}
-              <a href="{{{original_url}}}" class="fancybox">
-                <img alt="{{{title}}}" src="{{{resize original_url width=330 }}}" width="330" />
-              </a>
-            {{/if}}
-          {{/each}}
-        {{/if_many}}
+        {{{imageslider contents width="330" height="210" prevnext-enabled=false fx="fade" crop-single=false}}}
         <div class="asset-content">
           <div class="{{#if title_raw}}has_title{{/if}}">{{{title}}}</div>
           {{{description}}}
         </div>
       </div>
     {{/asset}}
-
 
 
 		{{#asset "videogroup" size="l"}}
@@ -397,46 +282,16 @@
 		{{/asset}}
 
 
-
-
     {{#asset "imagegroup" size="1"}}
       <div class="content">
-        {{#if_many images}}
-          <div class="slideshow">
-            <div class="images">
-            {{#each images}}
-              {{#if link}}
-                <a href="{{{link}}}">
-                  <img alt="{{{title}}}" src="{{{resize original_url width=245 }}}" width="245" />
-                </a>
-              {{else}}
-                <a href="{{{original_url}}}" class="fancybox">
-                  <img alt="{{{title}}}" src="{{{resize original_url width=245 }}}" width="245" />
-                </a>
-              {{/if}}
-            {{/each}}
-            </div>
-          </div>
-        {{else}}
-          {{#each images}}
-            {{#if link}}
-              <a href="{{{link}}}">
-                <img alt="{{{title}}}" src="{{{resize original_url width=245 }}}" width="245" />
-              </a>
-            {{else}}
-              <a href="{{{original_url}}}" class="fancybox">
-                <img alt="{{{title}}}" src="{{{resize original_url width=245 }}}" width="245" />
-              </a>
-            {{/if}}
-          {{/each}}
-        {{/if_many}}
+        {{{imageslider contents width="245" height="210" prevnext-enabled=false fx="fade" crop-single=false}}}
         <div class="asset-content">
           <div class="{{#if title_raw}}has_title{{/if}}">{{{title}}}</div>
           {{{description}}}
         </div>
       </div>
     {{/asset}}
-		
+
 
 		{{#asset "videogroup" size="1"}}
 			<div class="content">
@@ -506,35 +361,7 @@
 
     {{#asset "imagegroup" size="l"}}
       <div class="content">
-        {{#if_many images}}
-          <div class="slideshow">
-            <div class="images">
-            {{#each images}}
-              {{#if link}}
-                <a href="{{{link}}}">
-                  <img alt="{{{title}}}" src="{{{resize original_url width=410 }}}" width="410" />
-                </a>
-              {{else}}
-                <a href="{{{original_url}}}" class="fancybox">
-                  <img alt="{{{title}}}" src="{{{resize original_url width=410 }}}" width="410" />
-                </a>
-              {{/if}}
-            {{/each}}
-            </div>
-          </div>
-        {{else}}
-          {{#each images}}
-            {{#if link}}
-              <a href="{{{link}}}">
-                <img alt="{{{title}}}" src="{{{resize original_url width=410 }}}" width="410" />
-              </a>
-            {{else}}
-              <a href="{{{original_url}}}" class="fancybox">
-                <img alt="{{{title}}}" src="{{{resize original_url width=410 }}}" width="410" />
-              </a>
-            {{/if}}
-          {{/each}}
-        {{/if_many}}
+        {{{imageslider contents width="410" height="200" prevnext-enabled=false fx="fade" crop-single=false}}}
         <div class="asset-content">
           <div class="{{#if title_raw}}has_title{{/if}}">{{{title}}}</div>
           {{{description}}}
@@ -544,35 +371,7 @@
 
     {{#asset "imagegroup" size="s"}}
       <div class="content">
-        {{#if_many images}}
-          <div class="slideshow">
-            <div class="images">
-            {{#each images}}
-              {{#if link}}
-                <a href="{{{link}}}">
-                  <img alt="{{{title}}}" src="{{{resize original_url width=210 }}}" width="210" />
-                </a>
-              {{else}}
-                <a href="{{{original_url}}}" class="fancybox">
-                  <img alt="{{{title}}}" src="{{{resize original_url width=210 }}}" width="210" />
-                </a>
-              {{/if}}
-            {{/each}}
-            </div>
-          </div>
-        {{else}}
-          {{#each images}}
-            {{#if link}}
-              <a href="{{{link}}}">
-                <img alt="{{{title}}}" src="{{{resize original_url width=210 }}}" width="210" />
-              </a>
-            {{else}}
-              <a href="{{{original_url}}}" class="fancybox">
-                <img alt="{{{title}}}" src="{{{resize original_url width=210 }}}" width="210" />
-              </a>
-            {{/if}}
-          {{/each}}
-        {{/if_many}}
+        {{{imageslider contents width="210" height="200" prevnext-enabled=false fx="fade" crop-single=false}}}
         <div class="asset-content">
           <div class="{{#if title_raw}}has_title{{/if}}">{{{title}}}</div>
           {{{description}}}
