@@ -265,7 +265,18 @@ html .themed {
 	.documents a:hover { background: rgba(255, 255, 255, 0.7); text-decoration: underline; }
 	
 	.file-extension { display: block; margin: 0 auto 5px; }		
-	.file-title { display: block; text-transform: capitalize; font-size: .85em; line-height: 1.2em;}
+	.file-title {
+		display: block;
+		font-size: .85em;
+		line-height: 1.2em;
+		width: 140px;
+		height: 56px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-line-clamp: 4;
+		-webkit-box-orient: vertical;
+	}
 	.filesize { display: block; font-size: .85em; }
 	
 	.asset-type-text.asset-size-2 .asset-inner {  }
